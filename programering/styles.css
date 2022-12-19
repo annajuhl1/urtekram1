@@ -1,0 +1,300 @@
+/*RESET REGLER*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/*GENERELLE REGLER*/
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black; 
+}
+
+/*HEADER*/
+#logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}  
+
+header div{
+    background-image: url(images/kornmark.png);
+    background-repeat:repeat;
+    background-color: rgba(255, 255, 255, 0.499); background-blend-mode:soft-light;
+}  
+
+header nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16pt;
+    color: black;
+    letter-spacing: 2px;
+    padding-left: 125px;
+    padding-right: 125px;
+    transition: color 0.8s ease-out 100ms;
+} 
+
+header nav{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display:flex;
+    justify-content: center;
+}  
+
+header nav a:hover{
+    color: #ced0b2;
+}
+
+
+/*FORSIDE + ØKOLOGI*/
+.pastabillede{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/*FORSIDE + OM OS + VEGETARPASTA 0G BOLO*/
+.tekst{
+    justify-content: center;
+    background-color: #ced0b2;
+
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    letter-spacing: 2px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.tekst p{
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+/*ØKOLOGI*/
+.økologitekst{
+    padding-bottom: 20px;
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    letter-spacing: 2px; 
+}
+
+.økomærker{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.økomærker div{
+    background-color: #ced0b2;
+    padding: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    letter-spacing: 2px;
+}
+
+.økomærker p{
+    font-weight: 300;
+    line-height: 20px;
+    padding-left: 10px;
+}  
+
+.økomærker a{ 
+    text-decoration: none;
+    color: black;
+    display: flex;
+} 
+
+/*OPSKRIFTER*/
+h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16pt;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+} 
+
+.tekstopskrift{
+    background-color: #ced0b2;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5%;
+    letter-spacing: 2px; 
+}
+
+.linkpasta{
+    text-decoration: none;
+    color: black;
+}
+
+.linkpasta div:hover{
+    border: 2px solid black;
+}
+
+.tekstopskrift img{
+    width: 100%;
+    height: auto;
+}
+
+/*PASTAOPSKRIFTER VEGETARPASTA + BOLO*/
+
+.fremgangsmåde{
+    background-color: #ced0b2;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.fremgangsmåde img{
+    width: 100%;
+    height: auto; 
+}
+
+.ingredienser{
+    padding-left: 270px;
+    padding-right: 270px;
+}
+
+.ingredienser p{
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+}  
+
+h5{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12pt;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*FOOTER*/
+footer{
+    color: black;
+    text-transform: uppercase;
+    background-color: #e7ebde;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 70px;
+}
+
+footer h2{
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+.socialemedier{
+    display: flex;
+}
+
+.socialemedier a{
+    font-size: 40pt;
+    color: black;
+    margin: 10px;
+}
+
+.socialemedier a :hover{
+    color: white;
+    transition: color 1s ease-out 100ms;
+}
+
+/*RESPONSIVE*/
+/*MOBIL*/
+@media screen and (max-width:1110px){
+    /* Skjul laptopmenuen. */
+    .menu{
+        display:none; 
+    }
+
+    .pastabillede{
+        height: 100px;
+        width: auto;
+    }
+
+    .fremgangsmåde{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .ingredienser{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .tekstopskrift{
+        margin-left: 15%;
+        margin-right: 15%;
+    } 
+
+    .økomærker{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: auto;
+        height: 100%;
+    }
+
+    .økomærker a{ 
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    .økologitekst{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .tekst{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+
+}
+
+/* LAPTOP: */
+@media screen and (min-width:1110px){
+    /* HEADER: LOGO*/
+  
+    /* Skjul mobilmenuen.*/
+    #navmobil{
+        display:none;
+    }
+
+}
